@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"log"
+	// "log"
 	"os"
 	"bytes"
 	// "database/sql"
@@ -14,14 +14,14 @@ import (
 	"github.com/BartCzech/swift-api/repository"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 )
 
 func TestMain(m *testing.M) {
 	// Try to load the .env file from the project root.
-	if err := godotenv.Load("../.env"); err != nil {
-		log.Println("Warning: Error loading ../.env file. Make sure your .env file exists in the project root.")
-	}
+	// if err := godotenv.Load("../.env"); err != nil {
+	// 	log.Println("Warning: Error loading ../.env file. Make sure your .env file exists in the project root.")
+	// }
 	// Initialize the database connection.
 	// Ensure your .env file is available and points to a test database.
 	repository.ConnectDB()
