@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
@@ -14,9 +14,9 @@ var DB *sql.DB
 
 func ConnectDB() {
 	// Load env
-	if err := godotenv.Load(); err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	// if err := godotenv.Load(); err != nil {
+	// 	log.Fatal("Error loading .env file")
+	// }
 
 	// Connection string
 	dbURI := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=%s",
